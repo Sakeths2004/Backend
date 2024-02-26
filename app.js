@@ -22,7 +22,7 @@ app.use('/api/places', placesRoutes);
 app.use('/api/users', usersRoutes);
 
 app.use((req, res, next) => {
-  console.log(error)
+  // console.log(error)
   const error = new HttpError('Could not find this route.', 404);
   throw error;
 });
